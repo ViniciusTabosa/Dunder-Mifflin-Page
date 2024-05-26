@@ -1,6 +1,10 @@
+'use client'
+import { useRef } from "react"
+
 export const About = () => {
+    const targetRef = useRef(null)
     return(
-        <div className="flex flex-col mx-auto text-justify lg:w-10/12 gap-2" id="about">
+        <div className="flex flex-col mx-auto text-justify lg:w-10/12 gap-2" id="about" ref={targetRef}>
             <h1 className="text-amber-900 p-5 font-serif text-2xl">Nossa História</h1>
             <div className="p-5 flex flex-wrap md:flex-nowrap bg-amber-900/5 rounded-lg">
                 <img src="https://travelingtwogether.com/wp-content/uploads/2021/01/f85004da-d80d-42a2-98f7-ba3fd1c3ee81.jpg" alt="Torre da Dunder Mifflin em Scranton, Pensilvânia, EUA" className="w-96 rounded-2xl shadow-xl"/>

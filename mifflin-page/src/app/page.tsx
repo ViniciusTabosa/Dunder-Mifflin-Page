@@ -5,11 +5,13 @@ import { NavMenu } from "@/components/NavMenu";
 import { News } from "@/components/News";
 
 export default function Home() {
+  
+ 
   return (
     
       <div className=" bg-white text-black mx-auto">
         <NavMenu/>
-        
+        <News/>
         <About/>
         <Contact/>
         
